@@ -70,7 +70,7 @@ const config: Config = {
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            label: "Petstore API",
+            label: "BTS API",
             position: "left",
             to: "/docs/category/petstore-api",
           },
@@ -129,63 +129,63 @@ const config: Config = {
       prism: {
         prism: {
           additionalLanguages: [
-            "ruby",
-            "csharp",
-            "php",
-            "java",
-            "powershell",
-            "json",
-            "bash",
+            // "ruby",
+            // "csharp",
+            // "php",
+            // "java",
+            // "powershell",
+            // "json",
+            // "bash",
           ],
         },
-        languageTabs: [
-          {
-            highlight: "python",
-            language: "python",
-            logoClass: "python",
-          },
-          {
-            highlight: "bash",
-            language: "curl",
-            logoClass: "bash",
-          },
-          {
-            highlight: "csharp",
-            language: "csharp",
-            logoClass: "csharp",
-          },
-          {
-            highlight: "go",
-            language: "go",
-            logoClass: "go",
-          },
-          {
-            highlight: "javascript",
-            language: "nodejs",
-            logoClass: "nodejs",
-          },
-          {
-            highlight: "ruby",
-            language: "ruby",
-            logoClass: "ruby",
-          },
-          {
-            highlight: "php",
-            language: "php",
-            logoClass: "php",
-          },
-          {
-            highlight: "java",
-            language: "java",
-            logoClass: "java",
-            variant: "unirest",
-          },
-          {
-            highlight: "powershell",
-            language: "powershell",
-            logoClass: "powershell",
-          },
-        ],
+        // languageTabs: [
+        //   {
+        //     highlight: "python",
+        //     language: "python",
+        //     logoClass: "python",
+        //   },
+        //   {
+        //     highlight: "bash",
+        //     language: "curl",
+        //     logoClass: "bash",
+        //   },
+        //   {
+        //     highlight: "csharp",
+        //     language: "csharp",
+        //     logoClass: "csharp",
+        //   },
+        //   {
+        //     highlight: "go",
+        //     language: "go",
+        //     logoClass: "go",
+        //   },
+        //   {
+        //     highlight: "javascript",
+        //     language: "nodejs",
+        //     logoClass: "nodejs",
+        //   },
+        //   {
+        //     highlight: "ruby",
+        //     language: "ruby",
+        //     logoClass: "ruby",
+        //   },
+        //   {
+        //     highlight: "php",
+        //     language: "php",
+        //     logoClass: "php",
+        //   },
+        //   {
+        //     highlight: "java",
+        //     language: "java",
+        //     logoClass: "java",
+        //     variant: "unirest",
+        //   },
+        //   {
+        //     highlight: "powershell",
+        //     language: "powershell",
+        //     logoClass: "powershell",
+        //   },
+        // ],
       },
     } satisfies Preset.ThemeConfig,
 
@@ -197,8 +197,8 @@ const config: Config = {
         docsPluginId: "classic",
         config: {
           petstore: {
-            specPath: "examples/petstore.yaml",
-            outputDir: "docs/petstore",
+            specPath: "docs/flotte/petstore.yaml",
+            outputDir: "docs/api",
             downloadUrl:
               "https://raw.githubusercontent.com/PaloAltoNetworks/docusaurus-template-openapi-docs/main/examples/petstore.yaml",
             sidebarOptions: {

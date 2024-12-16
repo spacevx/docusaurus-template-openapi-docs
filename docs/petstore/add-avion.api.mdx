@@ -1,0 +1,124 @@
+---
+id: add-avion
+title: "Ajouter un nouvel avion"
+description: "Ajoute un nouvel avion"
+sidebar_label: "Ajouter un nouvel avion"
+hide_title: true
+hide_table_of_contents: true
+api: BASE64_ENCODED_API_DETAILS
+sidebar_class_name: "post api-method"
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+ as={"h1"}
+ className={"openapi__heading"}
+ children={"Ajouter un nouvel avion"}
+>
+</Heading>
+
+<MethodEndpoint
+ method={"post"}
+ path={"/avions"}
+ context={"endpoint"}
+>
+ 
+</MethodEndpoint>
+
+Ajoute un nouvel avion.
+
+<Heading
+ id={"request"}
+ as={"h2"}
+ className={"openapi-tabs__heading"}
+ children={"Requête"}
+>
+</Heading>
+
+<ParamsDetails
+ parameters={[
+   {
+     "name": "immatriculation",
+     "in": "query",
+     "description": "Numéro d'immatriculation unique de l'avion",
+     "required": true,
+     "schema": {
+       "type": "string",
+       "example": "F-ABCD"
+     }
+   },
+   {
+     "name": "marque", 
+     "in": "query",
+     "description": "Constructeur de l'avion",
+     "required": true,
+     "schema": {
+       "type": "string",
+       "example": "Airbus"
+     }
+   },
+   {
+     "name": "model",
+     "in": "query", 
+     "description": "Modèle spécifique de l'avion",
+     "required": true,
+     "schema": {
+       "type": "string",
+       "example": "A320"
+     }
+   },
+   {
+     "name": "fuelCapacity",
+     "in": "query",
+     "description": "Capacité totale de carburant de l'avion",
+     "required": false,
+     "schema": {
+       "type": "number",
+       "example": 20000
+     }
+   },
+   {
+     "name": "fuelLevel",
+     "in": "query", 
+     "description": "Niveau actuel de carburant de l'avion",
+     "required": false,
+     "schema": {
+       "type": "number",
+       "example": 15000
+     }
+   },
+   {
+     "name": "hangarID",
+     "in": "query",
+     "description": "Identifiant du hangar où l'avion est stocké",
+     "required": true, 
+     "schema": {
+       "type": "integer",
+       "example": 1
+     }
+   }
+ ]}
+>
+ 
+</ParamsDetails>
+
+
+<StatusCodes
+ responses={{
+   "201": {
+     "description": "Avion créé avec succès"
+   },
+   "400": {
+     "description": "Erreur de création - L'avion existe déjà ou données invalides"
+   }
+ }}
+>
+ 
+</StatusCodes>

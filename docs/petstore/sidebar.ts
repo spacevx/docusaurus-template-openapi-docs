@@ -16,20 +16,20 @@ const sidebar: SidebarsConfig = {
       items: [
         {
           type: "doc",
-          id: "petstore/schemas/cat",
+          id: "petstore/schemas/avion",
           label: "Cat",
           className: "schema",
         },
         {
           type: "doc",
-          id: "petstore/add-pet",
+          id: "petstore/add-avion",
           label: "Add a new pet to the store",
           className: "api-method post",
         },
         {
           type: "doc",
-          id: "petstore/update-pet",
-          label: "Update an existing pet",
+          id: "petstore/update-avion",
+          label: "Mettre à jour un avion",
           className: "api-method put",
         },
         {
