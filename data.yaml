@@ -2,9 +2,9 @@ openapi: 3.0.0
 servers:
   - url: localhost:5000/
     description: Default server
-  - url: https://petstore.swagger.io/sandbox
+  - url: localhost:5000/
     description: Sandbox server
-  - url: http://127.0.0.1:4010
+  - url: localhost:5000/
     description: Prism Mock API (local)
 info:
   description: |

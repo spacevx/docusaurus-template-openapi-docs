@@ -200,7 +200,7 @@ const config: Config = {
             specPath: "docs/flotte/petstore.yaml",
             outputDir: "docs/api",
             downloadUrl:
-              "https://raw.githubusercontent.com/PaloAltoNetworks/docusaurus-template-openapi-docs/main/examples/petstore.yaml",
+              "https://raw.githubusercontent.com/spacevx/docusaurus-template-openapi-docs/refs/heads/main/data.yaml",
             sidebarOptions: {
               groupPathsBy: "tag",
               categoryLinkSource: "tag",
