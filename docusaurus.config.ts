@@ -7,11 +7,11 @@ import type * as Plugin from "@docusaurus/types/src/plugin";
 import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
 
 const config: Config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
+  title: "BTS API",
+  tagline: "Documentation de l'API fait pour mon BTS",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
 
@@ -25,6 +25,7 @@ const config: Config = {
       "classic",
       {
         docs: {
+          // routeBasePath: '/',
           sidebarPath: require.resolve("./sidebars.ts"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -56,26 +57,26 @@ const config: Config = {
         },
       },
       navbar: {
-        title: "My Site",
+        title: "BTS API Documenation",
         logo: {
           alt: "My Site Logo",
           src: "img/logo.svg",
         },
         items: [
-          {
-            type: "doc",
-            docId: "intro",
-            position: "left",
-            label: "Tutorial",
-          },
-          { to: "/blog", label: "Blog", position: "left" },
+          // {
+          //   type: "doc",
+          //   docId: "intro",
+          //   position: "left",
+          //   label: "Tutorial",
+          // },
+          // { to: "/blog", label: "Blog", position: "left" },
           {
             label: "BTS API",
             position: "left",
-            to: "/docs/category/petstore-api",
+            to: "/docs/category/bts-api",
           },
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/spacevx/bts_api",
             label: "GitHub",
             position: "right",
           },
@@ -96,35 +97,35 @@ const config: Config = {
           {
             title: "Community",
             items: [
-              {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
-              },
+              // {
+              //   label: "Stack Overflow",
+              //   href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              // },
+              // {
+              //   label: "Discord",
+              //   href: "https://discordapp.com/invite/docusaurus",
+              // },
+              // {
+              //   label: "Twitter",
+              //   href: "https://twitter.com/docusaurus",
+              // },
             ],
           },
           {
             title: "More",
             items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
+              // {
+              //   label: "Blog",
+              //   to: "/blog",
+              // },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/spacevx/bts_api",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} BTS API by Ahcene Zidahnal, Inc. Built with Docusaurus.`,
       },
       prism: {
         prism: {
