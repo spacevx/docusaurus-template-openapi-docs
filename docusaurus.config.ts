@@ -9,16 +9,15 @@ import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
 const config: Config = {
   title: "BTS API",
   tagline: "Documentation de l'API fait pour mon BTS",
-  url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/",
+  url: "https://spacevx.github.io",
+  baseUrl: "/docusaurus-template-openapi-docs/",
+  organizationName: 'spacevx', // nom d'utilisateur GitHub
+  projectName: 'docusaurus-template-openapi-docs', // nom du repository
+  deploymentBranch: 'gh-pages', // branche où sera déployé le site
+  trailingSlash: false,
   onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
 
   presets: [
     [
