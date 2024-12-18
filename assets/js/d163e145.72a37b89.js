@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocusaurus_template_openapi_docs=self.webpackChunkdocusaurus_template_openapi_docs||[]).push([[6388],{3597:s=>{s.exports=JSON.parse('{"tags":[{"label":"test","permalink":"/docusaurus-template-openapi-docs/docs/tags/test","count":6}]}')}}]);

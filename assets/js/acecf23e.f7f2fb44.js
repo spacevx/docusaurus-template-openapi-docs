@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocusaurus_template_openapi_docs=self.webpackChunkdocusaurus_template_openapi_docs||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/docusaurus-template-openapi-docs/blog","blogTitle":"Blog","authorsListPath":"/docusaurus-template-openapi-docs/blog/authors"}')}}]);
